@@ -8,22 +8,46 @@ import Header from './Header'
 
 function App() {
   const [count, setCount] = useState(0)
+  let contador = 0;
+  function increment() {
+    contador++;
+    console.log(contador);
+  }
 
+  
   return (
     <>
       <section id="center">
+        <menu />
+
         <Header title="Bem vindo!"/>
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
+        <p><input type="button"value="Clique" onClick={increment} /></p>
+        <p> {contador} </p> Cliques!
+
         <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
+          <h1>Projeto Integrador</h1>
         </div>
+      </section>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<section>
         <button
           type="button"
           className="counter"
@@ -40,7 +64,7 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
+          <h2>Portifolio Pessoal</h2>
           <p>Your questions, answered</p>
           <ul>
             <li>
