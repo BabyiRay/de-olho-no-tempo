@@ -1,3 +1,17 @@
+
+import './App.css';
+import Router from '../Pages.jsx';
+
+function App() {
+  return (
+    <Router />
+  )
+}
+
+export default App
+
+//para corrigir 
+
 import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
@@ -7,11 +21,9 @@ import Header from './Header'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  let contador = 0;
+  const[contador, setContador] = useState(0);
   function increment() {
-    contador++;
-    console.log(contador);
+   setContador(contador+1);
   }
 
   
@@ -47,15 +59,7 @@ function App() {
 
 
 
-<section>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+
 
       <div className="ticks"></div>
 
