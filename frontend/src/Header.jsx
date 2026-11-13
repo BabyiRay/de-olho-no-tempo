@@ -1,7 +1,7 @@
-function Header() {
+function Header({ title = 'Projeto Integrador - PI' }) {
     return (
         <header>
-            <h1>Projeto Integrador - PI</h1>
+            <h1>{title}</h1>
         </header>
     );
 }
